@@ -9,10 +9,15 @@ import jean.jerome.caramazinlease.car.CarService;
 import jean.jerome.caramazinlease.client.ClientService;
 import jean.jerome.caramazinlease.contract.ContractService;
 import jean.jerome.caramazinlease.invoice.InvoiceService;
+import jean.jerome.caramazinlease.security.UserDetailsServiceImpl;
+
 
 
 @SpringBootApplication
 public class CarsLeaseApplication implements CommandLineRunner{
+	@Autowired
+	UserDetailsServiceImpl userDetailsServiceImpl;
+	
 	@Autowired
 	CarService carService;
 	
